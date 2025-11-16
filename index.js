@@ -84,7 +84,7 @@ async function handleRanking(req, res, rankFunction) {
 // --- API ENDPOINTS ---
 
 // Apply the API key check to all routes below this point
-app.use('/api/*', checkApiKey);
+app.use('/api/', checkApiKey);
 
 // Promote Endpoint
 app.get('/api/ranking/promote', (req, res) => {
